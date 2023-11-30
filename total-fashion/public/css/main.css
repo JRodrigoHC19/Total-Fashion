@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #7071E8;
-    --clr-main-light: #579BB1;
+    --clr-main: #2C6BC6;
+    --clr-main-light: #1990C7;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
     --clr-red: #961818;
@@ -48,7 +48,7 @@ aside {
 
 .logo {
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 4rem;
 }
 
 .menu {
@@ -187,7 +187,7 @@ main {
 }
 
 
-/** CARRITO **/
+/*Carrito*/
 
 .contenedor-carrito {
     display: flex;
@@ -286,7 +286,6 @@ main {
     display: none;
 }
 
-/*** MEDIA QUERIES ***/
 
 @media screen and (max-width: 850px) {
     .contenedor-productos {
