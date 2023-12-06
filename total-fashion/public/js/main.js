@@ -19,10 +19,6 @@ botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
     aside.classList.remove("aside-visible");
 }))
 
-//BUSCADOR
-
-
-
 function cargarProductos(productosElegidos) {
 
     contenedorProductos.innerHTML = "";
@@ -48,10 +44,8 @@ function cargarProductos(productosElegidos) {
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
-
         botonesCategorias.forEach(boton => boton.classList.remove("active"));
         e.currentTarget.classList.add("active");
-
         if (e.currentTarget.id != "todos") {
             const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
             tituloPrincipal.innerText = productoCategoria.categoria.nombre;
@@ -61,7 +55,6 @@ botonesCategorias.forEach(boton => {
             tituloPrincipal.innerText = "Todos los productos";
             cargarProductos(productos);
         }
-
     })
 });
 
@@ -94,7 +87,7 @@ function agregarAlCarrito(e) {
         position: "right",
         stopOnFocus: true, 
         style: {
-          background: "linear-gradient(to right, #1990C7, #1990C7)",
+          background: "linear-gradient(to right, #D42D2D, #D42D2D)",
           borderRadius: "2rem",
           textTransform: "uppercase",
           fontSize: ".75rem"
