@@ -1,2 +1,0 @@
-# Total-Fashion
-Ecommerce Tienda
