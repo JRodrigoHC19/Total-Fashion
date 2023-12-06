@@ -3,9 +3,6 @@ let count = 1
 
 function filtrar() {
     if (count == 1){
-        elementos = document.querySelectorAll(".producto")
-        count++
-    }
     // Obtener el texto de la barra de búsqueda
     var textoBusqueda = document.getElementById("input-search").value;
     // Crear una expresión regular para buscar el texto
@@ -34,6 +31,7 @@ function filtrar() {
 }
 
 function update_items() {
-    elementos = document.querySelectorAll(".producto")
-    count = 1
+        elementos = document.querySelectorAll(".producto")
+        count++
+    }
 }
